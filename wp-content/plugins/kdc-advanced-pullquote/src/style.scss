@@ -75,6 +75,10 @@
 
 	transition: none;
 
+	blockquote {
+		margin: 0 0 20px 0;
+	}
+
 	/* Handle fade in animation */
 	&.is-style-animate {
 		@media screen and (min-width: 768px) {
@@ -82,7 +86,7 @@
 			transition: opacity 200ms ease-out;
 
 			p,
-			cite,
+			figcaption,
 			.wp-block-post-title {
 				opacity: 0;
 				transition: opacity 200ms ease-out;
@@ -92,7 +96,7 @@
 				opacity: 1;
 				transition-delay: 200ms;
 				p,
-				cite,
+				figcaption,
 				.wp-block-post-title {
 					opacity: 1;
 					transition-delay: 650ms;
@@ -179,23 +183,13 @@
 		}
 	}
 
-	cite {
-		display: flex;
-		align-items: center;
+	figcaption {
 		padding: 0;
-		gap: 16px;
 		width: 100%;
 		font-style: normal;
-		font-family: var(--kdc-font-family-bold);
 
 		.editor-styles-wrapper & {
 			padding: 0;
-		}
-
-		img {
-			width: 48px;
-			height: 48px;
-			border-radius: 0;
 		}
 
 		p {

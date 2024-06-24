@@ -130,13 +130,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const blockTemplate = [['core/paragraph', {}], ['core/group', {
+const blockTemplate = [['core/group', {
   className: 'advanced-pullquote-cite',
-  tagName: 'cite'
-}, [['core/image', {
-  sizeSlug: 'thumbnail'
-}], ['core/paragraph', {
-  placeholder: 'This group is for author photo and attribution'
+  tagName: 'blockquote'
+}, [['core/paragraph', {}]]], ['core/group', {
+  className: 'advanced-pullquote-cite',
+  tagName: 'figcaption'
+}, [['core/paragraph', {
+  placeholder: 'This group is for author attribution'
 }]]]];
 const edit = ({
   attributes,
