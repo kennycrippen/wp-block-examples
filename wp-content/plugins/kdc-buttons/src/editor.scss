@@ -1,0 +1,45 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-kdc-kdc-buttons {
+	.blockHandle {
+		width: 100%;
+		background-color: black;
+		color: white;
+		display: none;
+		font-size: .75rem;
+	}
+
+	&.has-child-selected,
+	&.is-selected {
+		.blockHandle {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	.block-editor-block-list__layout {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 18px;
+	}
+
+	.kdc-a11y-buttons {
+		width: 100%;
+	}
+
+	&.is-three-up-layout {
+		.button-admin-custom {
+			justify-content: flex-start;
+			@media screen and (min-width: 768px) {
+				width: calc(50% - 18px);
+			}
+			@media screen and (min-width: 1200px) {
+				width: calc(33.3333% - 18px);
+			}
+		}
+	}
+}

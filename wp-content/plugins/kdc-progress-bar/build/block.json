@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kdc/kdc-progress-bar",
+  "version": "0.1.0",
+  "title": "Progress Bar",
+  "category": "theme-category",
+  "icon": "minus",
+  "description": "A block to keep track of page scroll.",
+  "example": {},
+  "keywords": [
+    "progress bar",
+    "progress",
+    "scroll"
+  ],
+  "supports": {
+    "align": [
+      "full",
+      "wide"
+    ],
+    "layout": true,
+    "spacing": {
+      "margin": [
+        "top",
+        "bottom"
+      ],
+      "padding": true
+    },
+    "customClassName": true
+  },
+  "textdomain": "kdc-progress-bar",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

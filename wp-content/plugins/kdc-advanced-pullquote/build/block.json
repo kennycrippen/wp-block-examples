@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kdc/kdc-advanced-pullquote",
+  "version": "0.1.0",
+  "title": "Advanced Pullquote",
+  "category": "theme-category",
+  "icon": "editor-quote",
+  "description": "A block to output a stylized pullquote.",
+  "example": {},
+  "keywords": [
+    "advanced pullquote",
+    "pullquote",
+    "quote",
+    "blockquote"
+  ],
+  "supports": {
+    "align": [
+      "full",
+      "wide"
+    ],
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "textdomain": "kdc-advanced-pullquote",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "bracketColor": {
+      "type": "string",
+      "default": "gray"
+    },
+    "bracketSize": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideQuote": {
+      "type": "boolean",
+      "default": false
+    },
+    "quoteColor": {
+      "type": "string",
+      "default": "gray"
+    },
+    "quoteSize": {
+      "type": "boolean",
+      "default": false
+    },
+    "animateInView": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

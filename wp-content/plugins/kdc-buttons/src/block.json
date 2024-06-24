@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"keywords": [
+		"buttons",
+		"block",
+		"a11y"
+	],
+	"name": "kdc/kdc-buttons",
+	"version": "0.1.0",
+	"title": "Accessible Buttons",
+	"category": "theme-category",
+	"icon": "button",
+	"description": "A container block to output multiple a11y buttons.",
+	"example": {},
+	"supports": {
+		"spacing": {
+			"margin": [
+				"top",
+				"bottom"
+			],
+			"padding": true
+		}
+	},
+	"attributes": {
+		"threeUpLayout": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"textdomain": "buttons",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

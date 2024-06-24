@@ -1,0 +1,217 @@
+.wp-block-kdc-kdc-advanced-pullquote {
+	// Font sizes.
+	--kdc-blockquote-font-size: 1.25rem;
+	--kdc-blockquote-cite-font-size: 1.25rem;
+
+	// Icons.
+	--kdc-quotes-icon: url('./svg/quotes.svg');
+	--kdc-quotes-icon-color: var(--wp--preset--color--contrast-2, #636363);
+	--kdc-quotes-icon-width: 50px;
+	--kdc-quotes-icon-height: 35px;
+
+	// Structure.
+	--kdc-pullquote-display: flex;
+	--kdc-quote-mark-display: block;
+
+	// Bracket colors.
+	--kdc-pullquote-bracket-color: var(--wp--preset--color--contrast-2, #636363);
+
+	// Brackets
+	&.is-style-bracket-color-gray {
+		--kdc-pullquote-bracket-color: var(--wp--preset--color--contrast-2, #636363);
+	}
+	
+	&.is-style-bracket-color-red {
+		--kdc-pullquote-bracket-color: var(--wp--preset--color--accent-3, #d8613c);
+	}
+
+	&.is-style-bracket-color-brown {
+		--kdc-pullquote-bracket-color: var(--wp--preset--color--accent-2, #c2a990);
+	}
+
+	&.is-style-bracket-color-green {
+		--kdc-pullquote-bracket-color: var(--wp--preset--color--accent-4, #b1c5a4);
+	}
+
+	&.is-style-bracket-color-teal {
+		--kdc-pullquote-bracket-color: var(--wp--preset--color--accent-5, #b5bdbc);
+	}
+
+	// Quotes
+	&.is-style-quotes-color-gray {
+		--kdc-quotes-icon: url('./svg/quotes.svg');
+		--kdc-quotes-icon-color: var(--wp--preset--color--contrast-2, #636363);
+	}
+
+	&.is-style-quotes-color-red {
+		--kdc-quotes-icon: url('./svg/quotes-style-two.svg');
+		--kdc-quotes-icon-color: var(--wp--preset--color--accent-3, #d8613c);
+	}
+
+	&.is-style-quotes-color-brown {
+		--kdc-quotes-icon: url('./svg/quotes-style-two.svg');
+		--kdc-quotes-icon-color: var(--wp--preset--color--accent-2, #c2a990);
+	}
+
+	&.is-style-quotes-color-green {
+		--kdc-quotes-icon: url('./svg/quotes-style-two.svg');
+		--kdc-quotes-icon-color: var(--wp--preset--color--accent-4, #b1c5a4);
+	}
+
+	&.is-style-quotes-color-teal {
+		--kdc-quotes-icon: url('./svg/quotes-style-two.svg');
+		--kdc-quotes-icon-color: var(--wp--preset--color--accent-5, #b5bdbc);
+	}
+
+	&.is-style-quotes-large {
+		--kdc-pullquote-display: block;
+		--kdc-quotes-icon-width: 70px;
+		--kdc-quotes-icon-height: 50px;
+	}
+
+	&.is-style-quotes-hidden {
+		--kdc-quote-mark-display: none;
+	}
+
+	transition: none;
+
+	/* Handle fade in animation */
+	&.is-style-animate {
+		@media screen and (min-width: 768px) {
+			opacity: 0;
+			transition: opacity 200ms ease-out;
+
+			p,
+			cite,
+			.wp-block-post-title {
+				opacity: 0;
+				transition: opacity 200ms ease-out;
+			}
+
+			&.animate-in {
+				opacity: 1;
+				transition-delay: 200ms;
+				p,
+				cite,
+				.wp-block-post-title {
+					opacity: 1;
+					transition-delay: 650ms;
+				}
+			}
+		}
+	}
+
+	font-style: italic;
+
+	background-image: linear-gradient(
+			var(--kdc-pullquote-bracket-color),
+			var(--kdc-pullquote-bracket-color)
+		),
+		linear-gradient(
+			var(--kdc-pullquote-bracket-color),
+			var(--kdc-pullquote-bracket-color)
+		),
+		linear-gradient(
+			var(--kdc-pullquote-bracket-color),
+			var(--kdc-pullquote-bracket-color)
+		),
+		linear-gradient(
+			var(--kdc-pullquote-bracket-color),
+			var(--kdc-pullquote-bracket-color)
+		);
+	background-repeat: no-repeat;
+	background-size: 20px 12px;
+	background-position: top left, top right, bottom left, bottom right;
+	border: solid var(--kdc-pullquote-bracket-color);
+	border-width: 0 12px;
+	padding: 40px;
+
+	@media screen and (min-width: 768px) {
+		background-size: 52px 20px;
+		border-width: 0 20px;
+		padding: 40px 80px;
+	}
+
+	&.is-style-bracket-small {
+		@media screen and (min-width: 768px) {
+			background-size: 20px 12px;
+			border-width: 0 12px;
+		}
+	}
+
+	p {
+		font-size: var(--kdc-blockquote-font-size);
+		font-family: var(--wp--preset--font-family--heading);
+		line-height: 1.3;
+		gap: 20px;
+
+		&::before {
+			content: '';
+			width: var(--kdc-quotes-icon-width);
+			min-width: var(--kdc-quotes-icon-width);
+			height: var(--kdc-quotes-icon-height);
+			mask-size: cover;
+			background-color: var(--kdc-quotes-icon-color);
+			display: var(--kdc-quote-mark-display);
+			mask-image: var(--kdc-quotes-icon);
+			margin-bottom: 16px;
+		}
+
+		@media screen and (min-width: 768px) {
+			--kdc-blockquote-font-size: 1.875rem;
+			display: var(--kdc-pullquote-display);
+		}
+
+		.editor-styles-wrapper & {
+			font-size: var(--kdc-blockquote-font-size);
+			line-height: 1.3;
+
+			@media screen and (min-width: 768px) {
+				--kdc-blockquote-font-size: 1.875rem;
+			}
+		}
+		&.has-text-align-center {
+			justify-content: center;
+		}
+
+		&.has-text-align-right {
+			justify-content: flex-end;
+		}
+	}
+
+	cite {
+		display: flex;
+		align-items: center;
+		padding: 0;
+		gap: 16px;
+		width: 100%;
+		font-style: normal;
+		font-family: var(--kdc-font-family-bold);
+
+		.editor-styles-wrapper & {
+			padding: 0;
+		}
+
+		img {
+			width: 48px;
+			height: 48px;
+			border-radius: 0;
+		}
+
+		p {
+			margin-top: 0;
+			font-size: var(--kdc-blockquote-cite-font-size);
+			&::before {
+				display: none;
+			}
+			.editor-styles-wrapper & {
+				font-size: var(--kdc-blockquote-cite-font-size);
+				line-height: 1.3;
+			}
+		}
+
+		figcaption {
+			display: none;
+		}
+	}
+}

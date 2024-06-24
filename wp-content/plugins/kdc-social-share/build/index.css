@@ -1,0 +1,27 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+.wp-block-kdc-kdc-social-share .button-admin-custom.social-share-admin {
+  padding: 10px 18px;
+  background-color: var(--kdc-color-white);
+  border-radius: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+}
+.wp-block-kdc-kdc-social-share .button-admin-custom.social-share-admin:hover, .wp-block-kdc-kdc-social-share .button-admin-custom.social-share-admin:focus, .wp-block-kdc-kdc-social-share .button-admin-custom.social-share-admin:active, .wp-block-kdc-kdc-social-share .button-admin-custom.social-share-admin:visited {
+  background-color: var(--kdc-color-white);
+  color: var(--kdc-color-black);
+  outline: 0;
+}
+.wp-block-kdc-kdc-social-share .button-admin-custom.social-share-admin .is-icon {
+  margin-right: 0;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/*# sourceMappingURL=index.css.map*/

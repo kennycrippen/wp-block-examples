@@ -1,0 +1,9 @@
+/**
+ * The following styles get applied inside the editor only.
+ */
+
+ .wp-block-kdc-kdc-button {
+	+ .block-list-appender .block-editor-button-block-appender {
+		border: 1px solid #fff;
+	}
+}

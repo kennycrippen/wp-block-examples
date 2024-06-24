@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "keywords": [
+    "button",
+    "block",
+    "a11y"
+  ],
+  "name": "kdc/kdc-button",
+  "version": "0.1.0",
+  "title": "Button",
+  "category": "theme-category",
+  "icon": "button",
+  "description": "A button block with accessible options.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "beforeText": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Add text..."
+    },
+    "afterText": {
+      "type": "string",
+      "default": ""
+    },
+    "url": {
+      "type": "string",
+      "default": ""
+    },
+    "target": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "button",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

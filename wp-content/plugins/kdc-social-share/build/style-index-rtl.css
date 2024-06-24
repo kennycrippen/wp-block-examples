@@ -1,0 +1,190 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.wp-block-kdc-kdc-social-share {
+  --kdc-social-share-width: 190px;
+  --kdc-color-black: var(--wp--preset--color--contrast, #111);
+  --kdc-color-white: var(--wp--preset--color--base-2, #fff);
+  --kdc-mobile-share-background: var(--wp--preset--color--contrast-2, #636363);
+  --kdc-link-icon: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktbGluayIgdmlld0JveD0iMCAwIDE2IDE2Ij4KPHBhdGggZD0iTTYuMzU0IDUuNUg0YTMgMyAwIDAgMCAwIDZoM2EzIDMgMCAwIDAgMi44My00SDlxLS4xMyAwLS4yNS4wMzFBMiAyIDAgMCAxIDcgMTAuNUg0YTIgMiAwIDEgMSAwLTRoMS41MzVjLjIxOC0uMzc2LjQ5NS0uNzE0LjgyLTF6Ii8+CjxwYXRoIGQ9Ik05IDUuNWEzIDMgMCAwIDAtMi44MyA0aDEuMDk4QTIgMiAwIDAgMSA5IDYuNWgzYTIgMiAwIDEgMSAwIDRoLTEuNTM1YTQgNCAwIDAgMS0uODIgMUgxMmEzIDMgMCAxIDAgMC02eiIvPgo8L3N2Zz4K);
+  --kdc-share-icon: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktc2hhcmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CjxwYXRoIGQ9Ik0xMy41IDFhMS41IDEuNSAwIDEgMCAwIDMgMS41IDEuNSAwIDAgMCAwLTNNMTEgMi41YTIuNSAyLjUgMCAxIDEgLjYwMyAxLjYyOGwtNi43MTggMy4xMmEyLjUgMi41IDAgMCAxIDAgMS41MDRsNi43MTggMy4xMmEyLjUgMi41IDAgMSAxLS40ODguODc2bC02LjcxOC0zLjEyYTIuNSAyLjUgMCAxIDEgMC0zLjI1Nmw2LjcxOC0zLjEyQTIuNSAyLjUgMCAwIDEgMTEgMi41bS04LjUgNGExLjUgMS41IDAgMSAwIDAgMyAxLjUgMS41IDAgMCAwIDAtM20xMSA1LjVhMS41IDEuNSAwIDEgMCAwIDMgMS41IDEuNSAwIDAgMCAwLTMiLz4KPC9zdmc+Cg==);
+  --kdc-facebook-icon: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktZmFjZWJvb2siIHZpZXdCb3g9IjAgMCAxNiAxNiI+CjxwYXRoIGQ9Ik0xNiA4LjA0OWMwLTQuNDQ2LTMuNTgyLTguMDUtOC04LjA1QzMuNTggMC0uMDAyIDMuNjAzLS4wMDIgOC4wNWMwIDQuMDE3IDIuOTI2IDcuMzQ3IDYuNzUgNy45NTF2LTUuNjI1aC0yLjAzVjguMDVINi43NVY2LjI3NWMwLTIuMDE3IDEuMTk1LTMuMTMxIDMuMDIyLTMuMTMxLjg3NiAwIDEuNzkxLjE1NyAxLjc5MS4xNTd2MS45OGgtMS4wMDljLS45OTMgMC0xLjMwMy42MjEtMS4zMDMgMS4yNTh2MS41MWgyLjIxOGwtLjM1NCAyLjMyNkg5LjI1VjE2YzMuODI0LS42MDQgNi43NS0zLjkzNCA2Ljc1LTcuOTUxIi8+Cjwvc3ZnPgo=);
+  --kdc-x-icon: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktdHdpdHRlci14IiB2aWV3Qm94PSIwIDAgMTYgMTYiPgo8cGF0aCBkPSJNMTIuNi43NWgyLjQ1NGwtNS4zNiA2LjE0MkwxNiAxNS4yNWgtNC45MzdsLTMuODY3LTUuMDctNC40MjUgNS4wN0guMzE2bDUuNzMzLTYuNTdMMCAuNzVoNS4wNjNsMy40OTUgNC42MzNMMTIuNjAxLjc1Wm0tLjg2IDEzLjAyOGgxLjM2TDQuMzIzIDIuMTQ1SDIuODY1eiIvPgo8L3N2Zz4K);
+  --kdc-linkedin-icon: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktbGlua2VkaW4iIHZpZXdCb3g9IjAgMCAxNiAxNiI+CjxwYXRoIGQ9Ik0wIDEuMTQ2QzAgLjUxMy41MjYgMCAxLjE3NSAwaDEzLjY1QzE1LjQ3NCAwIDE2IC41MTMgMTYgMS4xNDZ2MTMuNzA4YzAgLjYzMy0uNTI2IDEuMTQ2LTEuMTc1IDEuMTQ2SDEuMTc1Qy41MjYgMTYgMCAxNS40ODcgMCAxNC44NTR6bTQuOTQzIDEyLjI0OFY2LjE2OUgyLjU0MnY3LjIyNXptLTEuMi04LjIxMmMuODM3IDAgMS4zNTgtLjU1NCAxLjM1OC0xLjI0OC0uMDE1LS43MDktLjUyLTEuMjQ4LTEuMzQyLTEuMjQ4UzIuNCAzLjIyNiAyLjQgMy45MzRjMCAuNjk0LjUyMSAxLjI0OCAxLjMyNyAxLjI0OHptNC45MDggOC4yMTJWOS4zNTljMC0uMjE2LjAxNi0uNDMyLjA4LS41ODYuMTczLS40MzEuNTY4LS44NzggMS4yMzItLjg3OC44NjkgMCAxLjIxNi42NjIgMS4yMTYgMS42MzR2My44NjVoMi40MDFWOS4yNWMwLTIuMjItMS4xODQtMy4yNTItMi43NjQtMy4yNTItMS4yNzQgMC0xLjg0NS43LTIuMTY1IDEuMTkzdi4wMjVoLS4wMTZsLjAxNi0uMDI1VjYuMTY5aC0yLjRjLjAzLjY3OCAwIDcuMjI1IDAgNy4yMjV6Ii8+Cjwvc3ZnPgo=);
+  --kdc-threads-icon: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktdGhyZWFkcyIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBkPSJNNi4zMjEgNi4wMTZjLS4yNy0uMTgtMS4xNjYtLjgwMi0xLjE2Ni0uODAyLjc1Ni0xLjA4MSAxLjc1My0xLjUwMiAzLjEzMi0xLjUwMi45NzUgMCAxLjgwMy4zMjcgMi4zOTQuOTQ4cy45MjggMS41MDkgMS4wMDUgMi42NDRxLjQ5Mi4yMDcuOTA1LjQ4NGMxLjEwOS43NDUgMS43MTkgMS44NiAxLjcxOSAzLjEzNyAwIDIuNzE2LTIuMjI2IDUuMDc1LTYuMjU2IDUuMDc1QzQuNTk0IDE2IDEgMTMuOTg3IDEgNy45OTQgMSAyLjAzNCA0LjQ4MiAwIDguMDQ0IDAgOS42OSAwIDEzLjU1LjI0MyAxNSA1LjAzNmwtMS4zNi4zNTNDMTIuNTE2IDEuOTc0IDEwLjE2MyAxLjQzIDguMDA2IDEuNDNjLTMuNTY1IDAtNS41ODIgMi4xNzEtNS41ODIgNi43OSAwIDQuMTQzIDIuMjU0IDYuMzQzIDUuNjMgNi4zNDMgMi43NzcgMCA0Ljg0Ny0xLjQ0MyA0Ljg0Ny0zLjU1NiAwLTEuNDM4LTEuMjA4LTIuMTI3LTEuMjctMi4xMjctLjIzNiAxLjIzNC0uODY4IDMuMzEtMy42NDQgMy4zMS0xLjYxOCAwLTMuMDEzLTEuMTE4LTMuMDEzLTIuNTgyIDAtMi4wOSAxLjk4NC0yLjg0NyAzLjU1LTIuODQ3LjU4NiAwIDEuMjk0LjA0IDEuNjYzLjExNCAwLS42MzctLjU0LTEuNzI4LTEuOS0xLjcyOC0xLjI1IDAtMS41NjYuNDA1LTEuOTY3Ljg2OFpNOC43MTYgOC4xOWMtMi4wNCAwLTIuMzA0Ljg3LTIuMzA0IDEuNDE2IDAgLjg3OCAxLjA0MyAxLjE2OCAxLjYgMS4xNjggMS4wMiAwIDIuMDY3LS4yODIgMi4yMzItMi40MjNhNi4yIDYuMiAwIDAgMC0xLjUyOC0uMTYxIi8+Cjwvc3ZnPgo=);
+  --kdc-print-icon: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktcHJpbnRlciIgdmlld0JveD0iMCAwIDE2IDE2Ij4KPHBhdGggZD0iTTIuNSA4YS41LjUgMCAxIDAgMC0xIC41LjUgMCAwIDAgMCAxIi8+CjxwYXRoIGQ9Ik01IDFhMiAyIDAgMCAwLTIgMnYySDJhMiAyIDAgMCAwLTIgMnYzYTIgMiAwIDAgMCAyIDJoMXYxYTIgMiAwIDAgMCAyIDJoNmEyIDIgMCAwIDAgMi0ydi0xaDFhMiAyIDAgMCAwIDItMlY3YTIgMiAwIDAgMC0yLTJoLTFWM2EyIDIgMCAwIDAtMi0yek00IDNhMSAxIDAgMCAxIDEtMWg2YTEgMSAwIDAgMSAxIDF2Mkg0em0xIDVhMiAyIDAgMCAwLTIgMnYxSDJhMSAxIDAgMCAxLTEtMVY3YTEgMSAwIDAgMSAxLTFoMTJhMSAxIDAgMCAxIDEgMXYzYTEgMSAwIDAgMS0xIDFoLTF2LTFhMiAyIDAgMCAwLTItMnptNyAydjNhMSAxIDAgMCAxLTEgMUg1YTEgMSAwIDAgMS0xLTF2LTNhMSAxIDAgMCAxIDEtMWg2YTEgMSAwIDAgMSAxIDEiLz4KPC9zdmc+Cg==);
+  --kdc-chevron-down-icon: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktY2hldnJvbi1kb3duIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xLjY0NiA0LjY0NmEuNS41IDAgMCAxIC43MDggMEw4IDEwLjI5M2w1LjY0Ni01LjY0N2EuNS41IDAgMCAxIC43MDguNzA4bC02IDZhLjUuNSAwIDAgMS0uNzA4IDBsLTYtNmEuNS41IDAgMCAxIDAtLjcwOCIvPgo8L3N2Zz4K);
+  position: relative;
+  /* Mobile share */
+}
+.wp-block-kdc-kdc-social-share .is-icon {
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  background-color: #111;
+}
+.wp-block-kdc-kdc-social-share .icon-link {
+  -webkit-mask-image: var(--kdc-link-icon);
+          mask-image: var(--kdc-link-icon);
+}
+.wp-block-kdc-kdc-social-share .icon-share {
+  -webkit-mask-image: var(--kdc-share-icon);
+          mask-image: var(--kdc-share-icon);
+}
+.wp-block-kdc-kdc-social-share .icon-print {
+  -webkit-mask-image: var(--kdc-print-icon);
+          mask-image: var(--kdc-print-icon);
+}
+.wp-block-kdc-kdc-social-share .icon-share {
+  -webkit-mask-image: var(--kdc-share-icon);
+          mask-image: var(--kdc-share-icon);
+}
+.wp-block-kdc-kdc-social-share .icon-chevron-down {
+  -webkit-mask-image: var(--kdc-chevron-down-icon);
+          mask-image: var(--kdc-chevron-down-icon);
+}
+.wp-block-kdc-kdc-social-share .icon-facebook {
+  -webkit-mask-image: var(--kdc-facebook-icon);
+          mask-image: var(--kdc-facebook-icon);
+}
+.wp-block-kdc-kdc-social-share .icon-x {
+  -webkit-mask-image: var(--kdc-x-icon);
+          mask-image: var(--kdc-x-icon);
+}
+.wp-block-kdc-kdc-social-share .icon-linkedin {
+  -webkit-mask-image: var(--kdc-linkedin-icon);
+          mask-image: var(--kdc-linkedin-icon);
+}
+.wp-block-kdc-kdc-social-share .icon-threads {
+  -webkit-mask-image: var(--kdc-threads-icon);
+          mask-image: var(--kdc-threads-icon);
+}
+.wp-block-kdc-kdc-social-share .button {
+  padding: 10px 18px;
+  background-color: var(--kdc-color-white);
+  border-radius: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid var(--kdc-color-black);
+  cursor: pointer;
+  width: var(--kdc-social-share-width);
+  justify-content: space-between;
+  display: none;
+}
+.wp-block-kdc-kdc-social-share .button:hover, .wp-block-kdc-kdc-social-share .button:visited {
+  background-color: var(--kdc-color-white);
+  color: var(--kdc-color-black);
+  outline: 0;
+}
+.wp-block-kdc-kdc-social-share .button:focus, .wp-block-kdc-kdc-social-share .button:active {
+  outline: hsl(210, 100%, 85%) solid 3px;
+}
+.wp-block-kdc-kdc-social-share .button .is-icon {
+  margin-left: 0;
+  min-width: 20px;
+  height: 20px;
+}
+.wp-block-kdc-kdc-social-share .button.open .is-icon {
+  transform: rotate(-180deg);
+}
+@media screen and (min-width: 768px) {
+  .wp-block-kdc-kdc-social-share .button {
+    display: flex;
+  }
+}
+.wp-block-kdc-kdc-social-share .k-block--social-networks-dropdown {
+  --kdc-link-color: var(--kdc-color-black);
+  --kdc-link-hover-color: var(--kdc-color-white);
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--kdc-color-black);
+  width: var(--kdc-social-share-width);
+  position: absolute;
+  top: 41px;
+  background-color: var(--kdc-color-white);
+  z-index: 5;
+  box-sizing: border-box;
+}
+.wp-block-kdc-kdc-social-share .k-block--social-networks-dropdown.open {
+  display: block;
+}
+.wp-block-kdc-kdc-social-share .k-block--social-networks-dropdown li {
+  position: relative;
+}
+.wp-block-kdc-kdc-social-share .k-block--social-networks-dropdown li a {
+  padding: 10px 18px;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+.wp-block-kdc-kdc-social-share .k-block--social-networks-dropdown li a .is-icon {
+  background-color: var(--kdc-link-color);
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+}
+.wp-block-kdc-kdc-social-share .k-block--social-networks-dropdown li a:hover {
+  background-color: var(--kdc-color-black);
+  color: var(--kdc-color-white);
+}
+.wp-block-kdc-kdc-social-share .k-block--social-networks-dropdown li a:hover .is-icon {
+  background-color: var(--kdc-link-hover-color);
+}
+.wp-block-kdc-kdc-social-share .k-block--social-networks-dropdown li a:focus {
+  color: var(--kdc-link-color);
+}
+.wp-block-kdc-kdc-social-share .k-block--social-networks-dropdown li a:focus:hover {
+  color: var(--kdc-color-white);
+}
+.wp-block-kdc-kdc-social-share .custom-tooltip {
+  width: 100%;
+  background: var(--kdc-color-white);
+  border-top: 1px solid var(--kdc-color-black);
+  border-bottom: 1px solid var(--kdc-color-black);
+  color: var(--kdc-color-black);
+  border-radius: 0;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.18);
+  display: none;
+  font-size: 0.75rem;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-kdc-kdc-social-share .mobile-share-button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 0;
+  background-color: var(--kdc-mobile-share-background);
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-kdc-kdc-social-share .mobile-share-button:focus, .wp-block-kdc-kdc-social-share .mobile-share-button:active {
+  outline: hsl(210, 100%, 85%) solid 3px;
+}
+@media screen and (min-width: 768px) {
+  .wp-block-kdc-kdc-social-share .mobile-share-button {
+    display: none;
+  }
+}
+.wp-block-kdc-kdc-social-share .mobile-share-button .is-icon {
+  background-color: var(--kdc-color-white);
+  width: 20px;
+  height: 20px;
+}

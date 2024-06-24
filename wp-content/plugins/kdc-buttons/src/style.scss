@@ -1,0 +1,22 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+.wp-block-kdc-kdc-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 18px;
+
+	&.is-three-up-layout {
+		.button {
+			justify-content: flex-start;
+			@media screen and (min-width: 768px) {
+				width: calc(50% - 18px);
+			}
+			@media screen and (min-width: 1200px) {
+				width: calc(33.3333% - 18px);
+			}
+		}
+	}
+}

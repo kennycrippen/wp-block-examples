@@ -1,0 +1,215 @@
+.wp-block-kdc-kdc-social-share {
+
+	// Structure.
+	--kdc-social-share-width: 190px;
+
+	// Colors.
+	--kdc-color-black: var(--wp--preset--color--contrast, #111);
+	--kdc-color-white: var(--wp--preset--color--base-2, #fff);
+	--kdc-mobile-share-background: var(--wp--preset--color--contrast-2, #636363);
+
+	// Icons. 
+	--kdc-link-icon: url('./svg/link.svg');
+	--kdc-share-icon: url('./svg/share.svg');
+	--kdc-facebook-icon: url('./svg/facebook.svg');
+	--kdc-x-icon: url('./svg/x.svg');
+	--kdc-linkedin-icon: url('./svg/linkedin.svg');
+	--kdc-threads-icon: url('./svg/threads.svg');
+	--kdc-print-icon: url('./svg/print.svg');
+	--kdc-chevron-down-icon: url('./svg/chevron-down.svg');
+
+	.is-icon {
+		mask-size: cover;
+		background-color: #111;
+	}
+
+	.icon-link {
+		mask-image: var(--kdc-link-icon);
+	}
+	
+	.icon-share {
+		mask-image: var(--kdc-share-icon);
+	}
+
+	.icon-print {
+		mask-image: var(--kdc-print-icon);
+	}
+
+	.icon-share {
+		mask-image: var(--kdc-share-icon);
+	}
+
+	.icon-chevron-down {
+		mask-image: var(--kdc-chevron-down-icon);
+	}
+
+	.icon-facebook {
+		mask-image: var(--kdc-facebook-icon);
+	}
+
+	.icon-x {
+		mask-image: var(--kdc-x-icon);
+	}
+
+	.icon-linkedin {
+		mask-image: var(--kdc-linkedin-icon);
+	}
+
+	.icon-threads {
+		mask-image: var(--kdc-threads-icon);
+	}
+
+	position: relative;
+
+	.button {
+		padding: 10px 18px;
+		background-color: var(--kdc-color-white);
+		border-radius: 0;
+		font-size: 1rem;
+		font-weight: 500;
+		box-sizing: border-box;
+		border: 1px solid var(--kdc-color-black);
+		cursor: pointer;
+
+		&:hover,
+		&:visited {
+			background-color: var(--kdc-color-white);
+			color: var(--kdc-color-black);
+			outline: 0;
+		}
+
+		&:focus,
+		&:active {
+			outline: hsl(210, 100%, 85%) solid 3px;
+		}
+
+		width: var(--kdc-social-share-width);
+		justify-content: space-between;
+
+		.is-icon {
+			margin-right: 0;
+			min-width: 20px;
+			height: 20px;
+		}
+
+		&.open {
+			.is-icon {
+				transform: rotate(180deg);
+			}
+		}
+		display: none;
+
+		@media screen and (min-width: 768px) {
+			display: flex;
+		}
+	}
+
+	.k-block--social-networks-dropdown {
+		--kdc-link-color: var(--kdc-color-black);
+		--kdc-link-hover-color: var(--kdc-color-white);
+
+		display: none;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		border: 1px solid var(--kdc-color-black);
+		width: var(--kdc-social-share-width);
+		position: absolute;
+		top: 41px;
+		background-color: var(--kdc-color-white);
+		z-index: 5;
+		box-sizing: border-box;
+
+		&.open {
+			display: block;
+		}
+
+		li {
+			position: relative;
+			a {
+				padding: 10px 18px;
+				text-decoration: none;
+				display: flex;
+				align-items: flex-start;
+				gap: 10px;
+				width: 100%;
+				font-size: 1rem;
+				line-height: 1.2;
+				box-sizing: border-box;
+
+				.is-icon {
+					background-color: var(--kdc-link-color);
+					width: 16px;
+					height: 16px;
+					min-width: 16px;
+				}
+
+				&:hover {
+					background-color: var(--kdc-color-black);
+					color: var(--kdc-color-white);
+
+					.is-icon {
+						background-color: var(--kdc-link-hover-color);
+					}
+				}
+				&:focus {
+					color: var(--kdc-link-color);
+					&:hover {
+						color: var(--kdc-color-white);
+					}
+				}
+			}
+		}
+	}
+
+	.custom-tooltip {
+		width: 100%;
+		background: var(--kdc-color-white);
+		border-top: 1px solid var(--kdc-color-black);
+		border-bottom: 1px solid var(--kdc-color-black);
+		color: var(--kdc-color-black);
+		border-radius: 0;
+		box-shadow: 0 2px 2px 2px rgba(0,0,0,.18);
+		display: none;
+		font-size: .75rem;
+		left: 0;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		height: 100%;
+		display: none;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* Mobile share */
+	.mobile-share-button {
+		width: 40px;
+		height: 40px;
+		padding: 0;
+		border-radius: 0;
+		background-color: var(--kdc-mobile-share-background);
+		cursor: pointer;
+		border: 0;
+		outline: 0;
+
+		&:focus,
+		&:active {
+			outline: hsl(210, 100%, 85%) solid 3px;
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media screen and (min-width: 768px) {
+			display: none;
+		}
+
+		.is-icon {
+			background-color: var(--kdc-color-white);
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+

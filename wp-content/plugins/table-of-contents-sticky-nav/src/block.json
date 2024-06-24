@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "kdc/table-of-contents-sticky-nav",
+	"version": "0.1.0",
+	"title": "Table Of Contents Sticky Nav",
+	"category": "widgets",
+	"icon": "format-aside",
+	"description": "A block that scrapes H2/H3 tags and appends them to a list to use as a sticky navigation.",
+	"keywords": [
+		"table of contents",
+		"nav",
+		"sidebar nav"
+	],
+	"attributes": {
+		"listStyleType": {
+			"type": "string",
+			"default": "unstyled"
+		}
+	},
+	"textdomain": "table-of-contents-sticky-nav",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

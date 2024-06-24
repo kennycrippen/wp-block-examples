@@ -1,0 +1,103 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ */
+
+@mixin button {
+	// Colors.
+	--kdc-color-gray-dark: var(--wp--preset--color--contrast-2, #636363);
+	--kdc-color-white: var(--wp--preset--color--base-2, #fff);
+
+	// Structure.
+	--kdc-button-height: auto;
+	--kdc-button-vertical-padding: 8px;
+	--kdc-button-horizontal-padding: 16px;
+	--kdc-button-border-width: 2px;
+	--kdc-button-border-color: var(--kdc-color-gray-dark);
+	--kdc-button-border-radius: 0;
+	--kdc-button-background-color: var(--kdc-color-gray-dark);
+	--kdc-button-font-weight: 500;
+	--kdc-button-text-color: var(--kdc-color-white);
+
+	// States.
+	--kdc-button-hover-border-color: var(--kdc-color-gray-dark);
+	--kdc-button-hover-background-color: var(--kdc-color-white);
+	--kdc-button-hover-text-color: var(--kdc-color-gray-dark);
+	--kdc-button-focus-border-color: var(--kdc-color-gray-dark);
+	--kdc-button-focus-background-color: var(--kdc-color-white);
+	--kdc-button-focus-text-color: var(--kdc-color-gray-dark);
+	--kdc-button-active-border-color: var(--kdc-color-gray-dark);
+	--kdc-button-active-background-color: var(--kdc-color-white);
+	--kdc-button-active-text-color: var(--kdc-color-gray-dark);
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: var(--kdc-button-height);
+	margin: 0;
+	padding: var(--kdc-button-vertical-padding) var(--kdc-button-horizontal-padding);
+	border: var(--kdc-button-border-width) solid var(--kdc-button-border-color);
+	border-radius: var(--kdc-button-border-radius);
+	background-color: var(--kdc-button-background-color);
+	font-weight: var(--kdc-button-font-weight);
+	line-height: inherit;
+	text-decoration: none;
+	color: var(--kdc-button-text-color);
+	transition: border-color 100ms ease-out, color 100ms ease-out, background-color 100ms ease-out;
+	cursor: pointer;
+	box-sizing: border-box;
+	font-size: .875rem;
+
+	@media screen and (min-width: 768px) {
+		font-size: 1rem;
+	}
+
+	&:hover,
+	&:visited:hover {
+		border-color: var(--kdc-button-hover-border-color);
+		background-color: var(--kdc-button-hover-background-color);
+		color: var(--kdc-button-hover-text-color);
+	}
+
+	&:focus,
+	&:active {
+		outline: hsl(210, 100%, 85%) solid 3px;
+	}
+
+	&:focus,
+	&:visited:focus {
+		border-color: var(--kdc-button-focus-border-color);
+		background-color: var(--kdc-button-focus-background-color);
+		color: var(--kdc-button-focus-text-color);
+	}
+
+	&:active,
+	&:visited:active {
+		border-color: var(--kdc-button-active-border-color);
+		background-color: var(--kdc-button-active-background-color);
+		color: var(--kdc-button-active-text-color);
+	}
+
+	/* force styling of text color if element has visited state (needed for `a` elements) */
+	&:visited {
+		color: var(--kdc-button-text-color);
+	}
+
+	&:disabled,
+	&[aria-disabled] {
+		border-color: transparent;
+		background-color: #424242;
+		color: #9d9d9d;
+		cursor: not-allowed;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: auto;
+	}
+
+}
+
+.wp-block-kdc-kdc-button {
+	@include button;
+}

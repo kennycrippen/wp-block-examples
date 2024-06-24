@@ -1,0 +1,76 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.wp-block-kdc-kdc-progress-bar {
+  --kdc-progress-bar-background: var(--wp--preset--color--accent-5, #b5bdbc);
+  --kdc-progress-bar-container-background: var(--wp--preset--color--contrast-2, #636363);
+  --kdc-color-black: var(--wp--preset--color--contrast, #111);
+  --kdc-color-white: var(--wp--preset--color--base-2, #fff);
+  --kdc-calendar-icon: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktY2FsZW5kYXItZXZlbnQiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CjxwYXRoIGQ9Ik0xMSA2LjVhLjUuNSAwIDAgMSAuNS0uNWgxYS41LjUgMCAwIDEgLjUuNXYxYS41LjUgMCAwIDEtLjUuNWgtMWEuNS41IDAgMCAxLS41LS41eiIvPgo8cGF0aCBkPSJNMy41IDBhLjUuNSAwIDAgMSAuNS41VjFoOFYuNWEuNS41IDAgMCAxIDEgMFYxaDFhMiAyIDAgMCAxIDIgMnYxMWEyIDIgMCAwIDEtMiAySDJhMiAyIDAgMCAxLTItMlYzYTIgMiAwIDAgMSAyLTJoMVYuNWEuNS41IDAgMCAxIC41LS41TTEgNHYxMGExIDEgMCAwIDAgMSAxaDEyYTEgMSAwIDAgMCAxLTFWNHoiLz4KPC9zdmc+Cg==);
+  position: relative;
+  background-color: var(--kdc-progress-bar-container-background);
+  color: var(--kdc-color-white);
+  z-index: 5;
+  border-top: 1px solid var(--kdc-color-white);
+  /* Adjust top positioning when WP user logged in */
+}
+@media screen and (min-width: 768px) {
+  .wp-block-kdc-kdc-progress-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .admin-bar .wp-block-kdc-kdc-progress-bar {
+    top: 32px;
+  }
+}
+.admin-bar .wp-block-kdc-kdc-progress-bar.block-editor-block-list__block {
+  top: 0;
+}
+.wp-block-kdc-kdc-progress-bar .progress-bar--heading {
+  margin: 0 0 5px 0;
+  color: var(--kdc-color-white);
+  font-family: var(--wp--preset--font-family--heading);
+}
+.wp-block-kdc-kdc-progress-bar .wp-block-post-date {
+  margin: 0;
+}
+.wp-block-kdc-kdc-progress-bar .wp-block-post-date time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--kdc-color-white);
+}
+.wp-block-kdc-kdc-progress-bar .wp-block-post-date time::before {
+  content: "";
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-image: var(--kdc-calendar-icon);
+          mask-image: var(--kdc-calendar-icon);
+  background-color: var(--kdc-color-white);
+  min-width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.wp-block-kdc-kdc-progress-bar .social-share-col {
+  display: flex;
+  justify-content: flex-end;
+}
+.wp-block-kdc-kdc-progress-bar .progressBar {
+  height: 8px;
+  background: var(--kdc-progress-bar-background);
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .wp-block-kdc-kdc-progress-bar .progressBar {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

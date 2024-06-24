@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kdc/kdc-social-share",
+  "version": "0.1.0",
+  "title": "Social Share",
+  "category": "theme-category",
+  "icon": "share",
+  "description": "This block outputs a dropdown menu with social sharing links.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "render": "file:./render.php",
+  "attributes": {
+    "printText": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "kdc-social-share",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
