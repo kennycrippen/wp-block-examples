@@ -25,8 +25,8 @@ export const edit = () => {
 	const blockProperties = useBlockProps(); // NOSONAR
 
 	return (
-		<section {...blockProperties}>
+		<div {...blockProperties}>
 			<InnerBlocks allowedBlocks={allowedBlocks} template={blockTemplate} />
-		</section>
+		</div>
 	);
 };

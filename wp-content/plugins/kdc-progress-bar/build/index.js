@@ -36,7 +36,7 @@ const blockTemplate = [['core/columns', {
 const edit = () => {
   const blockProperties = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)(); // NOSONAR
 
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProperties
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks, {
     allowedBlocks: allowedBlocks,
@@ -131,7 +131,7 @@ const save = ({
   if ('constrained' === type) {
     blockProperties.className += ' is-layout-constrained';
   }
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProperties
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks.Content, null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "progressBar"

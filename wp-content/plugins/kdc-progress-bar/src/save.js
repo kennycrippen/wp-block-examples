@@ -9,9 +9,9 @@ export const save = ({ attributes }) => {
 	}
 
 	return (
-		<section {...blockProperties}>
+		<div {...blockProperties}>
 			<InnerBlocks.Content />
 			<div className="progressBar"></div>
-		</section>
+		</div>
 	);
 }
