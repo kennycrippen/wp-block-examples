@@ -26,10 +26,10 @@ export const edit = ( { attributes, setAttributes } ) => {
 				<PanelBody>
 					<PanelRow>
 						<ToggleControl
-							label={__("3-up Layout")}
+							label={__('3-up Layout', 'kdc-buttons')}
 							checked={threeUpLayout}
 							onChange={(value) => setAttributes({ threeUpLayout: value })}
-							help={__("Set width of each button to one third of container width.")}
+							help={__('Set width of each button to one third of container width.', 'kdc-buttons')}
 						/>
 					</PanelRow>
 				</PanelBody>

@@ -41,12 +41,12 @@ const edit = ({
   blockProperties.className += " has-handle";
   blockProperties.className += threeUpClass;
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("3-up Layout"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('3-up Layout', 'kdc-buttons'),
     checked: threeUpLayout,
     onChange: value => setAttributes({
       threeUpLayout: value
     }),
-    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Set width of each button to one third of container width.")
+    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Set width of each button to one third of container width.', 'kdc-buttons')
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
     ...blockProperties
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -230,7 +230,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"keywords":["buttons","block","a11y"],"name":"kdc/kdc-buttons","version":"0.1.0","title":"Accessible Buttons","category":"theme-category","icon":"button","description":"A container block to output multiple a11y buttons.","example":{},"supports":{"spacing":{"margin":["top","bottom"],"padding":true}},"attributes":{"threeUpLayout":{"type":"boolean","default":true}},"textdomain":"buttons","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"keywords":["buttons","block","a11y"],"name":"kdc/kdc-buttons","version":"0.1.0","title":"Accessible Buttons","category":"theme-category","icon":"button","description":"A container block to output multiple a11y buttons.","example":{},"supports":{"spacing":{"margin":["top","bottom"],"padding":true}},"attributes":{"threeUpLayout":{"type":"boolean","default":false}},"textdomain":"kdc-buttons","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 
