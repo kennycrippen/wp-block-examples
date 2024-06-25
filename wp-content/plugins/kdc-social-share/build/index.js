@@ -39,12 +39,12 @@ const edit = ({
     title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Social Share', 'kdc-social-share'),
     initialOpen: true
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Print Button Text"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Print Button Text', 'kdc-social-share'),
     value: printText,
     onChange: value => setAttributes({
       printText: value
     }),
-    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("The text to output within the Print list item.")
+    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('The text to output within the Print list item.', 'kdc-social-share')
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
     ...blockProperties
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {

@@ -18,10 +18,10 @@ export const edit = ({attributes, setAttributes}) => {
 				>
 					<PanelRow>
 						<TextControl
-							label={__("Print Button Text")}
+							label={__('Print Button Text', 'kdc-social-share')}
 							value={printText}
 							onChange={(value) => setAttributes({ printText: value })}
-							help={__("The text to output within the Print list item.")}
+							help={__('The text to output within the Print list item.', 'kdc-social-share')}
 						/>
 					</PanelRow>
 				</PanelBody>
