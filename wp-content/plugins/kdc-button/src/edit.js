@@ -13,45 +13,45 @@ function EditorControls( { attributes, setAttributes } ) {
 
 	return (
 		<InspectorControls>
-			<PanelBody title={__("Button Text Options")}>
+			<PanelBody title={__('Button Text Options', 'kdc-button')}>
 				<PanelRow>
 					<TextControl
-						label={__("a11y Before Text")}
+						label={__('a11y Before Text', 'kdc-button')}
 						value={attributes.beforeText}
 						onChange={(value) => setAttributes({ beforeText: value })}
-						help={__("The screen reader text to output before the button text.")}
+						help={__('The screen reader text to output before the button text.', 'kdc-button')}
 					/>
 				</PanelRow>
 				<PanelRow>
 					<TextControl
-						label={__("Button Text")}
+						label={__('Button Text', 'kdc-button')}
 						value={attributes.buttonText}
 						onChange={(value) => setAttributes({ buttonText: value })}
-						help={__("The button text.")}
+						help={__('The button text.', 'kdc-button')}
 					/>
 				</PanelRow>
 				<PanelRow>
 					<TextControl
-						label={__("a11y After Text")}
+						label={__('a11y After Text', 'kdc-button')}
 						value={attributes.afterText}
 						onChange={(value) => setAttributes({ afterText: value })}
-						help={__("The screen reader text to output after the button text.")}
+						help={__('The screen reader text to output after the button text.', 'kdc-button')}
 					/>
 				</PanelRow>
 				<PanelRow>
 					<TextControl
-						label={__("Button URL")}
+						label={__('Button URL', 'kdc-button')}
 						value={attributes.url}
 						onChange={(value) => setAttributes({ url: value })}
-						help={__("The button URL.")}
+						help={__('The button URL.', 'kdc-button')}
 					/>
 				</PanelRow>
 				<PanelRow>
 					<ToggleControl
-						label={__("Open in new window")}
+						label={__('Open in new window', 'kdc-button')}
 						checked={attributes.target}
 						onChange={(value) => setAttributes({ target: value })}
-						help={__("The button target.")}
+						help={__('The button target.', 'kdc-button')}
 					/>
 				</PanelRow>
 			</PanelBody>
@@ -59,14 +59,14 @@ function EditorControls( { attributes, setAttributes } ) {
 	);
 }
 
-export const edit = (properties) => {
+export const edit = ( properties ) => {
 	const { attributes } = properties;
 	const { beforeText = '', buttonText = '', afterText = '' } = attributes;
 	const blockProperties = useBlockProps();
 	blockProperties.className += " button-admin-custom";
-	const beforeTextOutput = beforeText !== '' ? beforeText + ' ' : '';
+	const beforeTextOutput = beforeText !== '' ? `${beforeText} ` : '';
 	const buttonTextOutput = buttonText !== '' ? buttonText + ' ' : '';
-	const afterTextOutput = afterText !== '' ? ' ' + afterText : '';
+	const afterTextOutput = afterText !== '' ? ` ${afterText}` : '';
 
 	return (
 		<>

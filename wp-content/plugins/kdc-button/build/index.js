@@ -37,42 +37,42 @@ function EditorControls({
   setAttributes
 }) {
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Button Text Options")
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Button Text Options', 'kdc-button')
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("a11y Before Text"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('a11y Before Text', 'kdc-button'),
     value: attributes.beforeText,
     onChange: value => setAttributes({
       beforeText: value
     }),
-    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("The screen reader text to output before the button text.")
+    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('The screen reader text to output before the button text.', 'kdc-button')
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Button Text"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Button Text', 'kdc-button'),
     value: attributes.buttonText,
     onChange: value => setAttributes({
       buttonText: value
     }),
-    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("The button text.")
+    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('The button text.', 'kdc-button')
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("a11y After Text"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('a11y After Text', 'kdc-button'),
     value: attributes.afterText,
     onChange: value => setAttributes({
       afterText: value
     }),
-    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("The screen reader text to output after the button text.")
+    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('The screen reader text to output after the button text.', 'kdc-button')
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Button URL"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Button URL', 'kdc-button'),
     value: attributes.url,
     onChange: value => setAttributes({
       url: value
     }),
-    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("The button URL.")
+    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('The button URL.', 'kdc-button')
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Open in new window"),
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Open in new window', 'kdc-button'),
     checked: attributes.target,
     onChange: value => setAttributes({
       target: value
     }),
-    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("The button target.")
+    help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('The button target.', 'kdc-button')
   }))));
 }
 const edit = properties => {
@@ -86,9 +86,9 @@ const edit = properties => {
   } = attributes;
   const blockProperties = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)();
   blockProperties.className += " button-admin-custom";
-  const beforeTextOutput = beforeText !== '' ? beforeText + ' ' : '';
+  const beforeTextOutput = beforeText !== '' ? `${beforeText} ` : '';
   const buttonTextOutput = buttonText !== '' ? buttonText + ' ' : '';
-  const afterTextOutput = afterText !== '' ? ' ' + afterText : '';
+  const afterTextOutput = afterText !== '' ? ` ${afterText}` : '';
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, EditorControls(properties), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     ...blockProperties,
     href: "javascript:void(0)"
@@ -287,7 +287,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"keywords":["button","block","a11y"],"name":"kdc/kdc-button","version":"0.1.0","title":"Button","category":"theme-category","icon":"button","description":"A button block with accessible options.","example":{},"supports":{"html":false},"attributes":{"beforeText":{"type":"string","default":""},"buttonText":{"type":"string","default":"Add text..."},"afterText":{"type":"string","default":""},"url":{"type":"string","default":""},"target":{"type":"boolean","default":false}},"textdomain":"button","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"keywords":["button","block","a11y"],"name":"kdc/kdc-button","version":"0.1.0","title":"Button","category":"theme-category","icon":"button","description":"A button block with accessible options.","example":{},"supports":{"html":false},"attributes":{"beforeText":{"type":"string","default":""},"buttonText":{"type":"string","default":"Add text..."},"afterText":{"type":"string","default":""},"url":{"type":"string","default":""},"target":{"type":"boolean","default":false}},"textdomain":"kdc-button","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 
