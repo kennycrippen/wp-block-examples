@@ -168,15 +168,15 @@ const edit = ({
     label: 'Teal',
     value: 'teal'
   }];
-  const bracketStyleClass = bracketColor ? 'is-style-bracket-color-' + bracketColor : '';
+  const bracketStyleClass = bracketColor ? `is-style-bracket-color-${bracketColor}` : '';
   const bracketSizeClass = bracketSize ? 'is-style-bracket-small' : '';
   const hideQuoteClass = hideQuote ? 'is-style-quotes-hidden' : '';
-  const quoteColorClass = quoteColor ? 'is-style-quotes-color-' + quoteColor : '';
+  const quoteColorClass = quoteColor ? `is-style-quotes-color-${quoteColor}` : '';
   const quoteSizeClass = quoteSize ? 'is-style-quotes-large' : '';
   const classes = _classes__WEBPACK_IMPORTED_MODULE_4__["default"].fromMany([(_blockProperties$clas = blockProperties.className) !== null && _blockProperties$clas !== void 0 ? _blockProperties$clas : '', bracketStyleClass, quoteColorClass, quoteSizeClass, bracketSizeClass, hideQuoteClass]);
   blockProperties.className = classes.toString();
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Pullquote Options', 'pen-america'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Pullquote Options', 'kdc-advanced-pullquote'),
     initialOpen: true
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Flex, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.FlexBlock, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.SelectControl, {
     label: "Bracket Color",
@@ -314,11 +314,11 @@ const save = ({
     quoteSize
   } = attributes;
   const blockProperties = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save();
-  const bracketStyleClass = bracketColor ? 'is-style-bracket-color-' + bracketColor : '';
+  const bracketStyleClass = bracketColor ? `is-style-bracket-color-${bracketColor}` : '';
   const bracketSizeClass = bracketSize ? 'is-style-bracket-small' : '';
   const animateClass = animateInView ? 'is-style-animate' : '';
   const hideQuoteClass = hideQuote ? 'is-style-quotes-hidden' : '';
-  const quoteColorClass = quoteColor ? 'is-style-quotes-color-' + quoteColor : '';
+  const quoteColorClass = quoteColor ? `is-style-quotes-color-${quoteColor}` : '';
   const quoteSizeClass = quoteSize ? 'is-style-quotes-large' : '';
   const classes = _classes__WEBPACK_IMPORTED_MODULE_2__["default"].fromMany([(_blockProperties$clas = blockProperties.className) !== null && _blockProperties$clas !== void 0 ? _blockProperties$clas : '', bracketStyleClass, quoteColorClass, quoteSizeClass, bracketSizeClass, animateClass, hideQuoteClass]);
   blockProperties.className = classes.toString();

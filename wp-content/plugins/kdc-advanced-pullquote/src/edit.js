@@ -1,6 +1,6 @@
 import { useBlockProps, InnerBlocks, InspectorControls } from '@wordpress/block-editor';
 import { PanelBody, PanelRow, ToggleControl, SelectControl, Flex, FlexBlock } from '@wordpress/components';
-import {__} from '@wordpress/i18n';
+import { __ } from '@wordpress/i18n';
 import React from 'react';
 import Classes from "./classes";
 
@@ -15,7 +15,7 @@ const blockTemplate = [
 	]],
 ];
 
-export const edit = ({attributes, setAttributes}) => {
+export const edit = ( { attributes, setAttributes } ) => {
 	const { bracketColor, bracketSize, hideQuote, quoteColor, quoteSize } = attributes;
 	const blockProperties = useBlockProps();
 
@@ -27,10 +27,10 @@ export const edit = ({attributes, setAttributes}) => {
 		{ label: 'Teal', value: 'teal' },
 	];
 
-	const bracketStyleClass = bracketColor ? 'is-style-bracket-color-' + bracketColor : '';
+	const bracketStyleClass = bracketColor ? `is-style-bracket-color-${bracketColor}` : '';
 	const bracketSizeClass = bracketSize ? 'is-style-bracket-small' : '';
 	const hideQuoteClass = hideQuote ? 'is-style-quotes-hidden' : '';
-	const quoteColorClass = quoteColor ? 'is-style-quotes-color-' + quoteColor : '';
+	const quoteColorClass = quoteColor ? `is-style-quotes-color-${quoteColor}` : '';
 	const quoteSizeClass = quoteSize ? 'is-style-quotes-large' : '';
 	const classes = Classes.fromMany(
 		[blockProperties.className ?? '', bracketStyleClass, quoteColorClass, quoteSizeClass, bracketSizeClass, hideQuoteClass]
@@ -42,7 +42,7 @@ export const edit = ({attributes, setAttributes}) => {
 		<>
 			<InspectorControls>
 				<PanelBody
-					title={__('Pullquote Options', 'pen-america')}
+					title={__('Pullquote Options', 'kdc-advanced-pullquote')}
 					initialOpen={true}
 				>
 					<PanelRow>
