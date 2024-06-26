@@ -6,6 +6,7 @@ import Classes from "./classes";
 
 import './editor.scss';
 
+// Set up the default block template. This will appear in the WP editor each time the block is added to a post or page.
 const blockTemplate = [
 	['core/group', { className: 'advanced-pullquote-cite', tagName: 'blockquote' }, [
 		['core/paragraph', {}],
@@ -16,9 +17,11 @@ const blockTemplate = [
 ];
 
 export const edit = ( { attributes, setAttributes } ) => {
+	// Destructure individual block attributes from the attributes. These are set in block.json.
 	const { bracketColor, bracketSize, hideQuote, quoteColor, quoteSize } = attributes;
 	const blockProperties = useBlockProps();
 
+	// Define color options for the block controls select dropdown.
 	const colorOptions = [
 		{ label: 'Gray', value: 'gray' },
 		{ label: 'Red', value: 'red' },
@@ -27,6 +30,7 @@ export const edit = ( { attributes, setAttributes } ) => {
 		{ label: 'Teal', value: 'teal' },
 	];
 
+	// Define block class names based on whether or not specific block attributes are set.
 	const bracketStyleClass = bracketColor ? `is-style-bracket-color-${bracketColor}` : '';
 	const bracketSizeClass  = bracketSize ? 'is-style-bracket-small' : '';
 	const hideQuoteClass    = hideQuote ? 'is-style-quotes-hidden' : '';
@@ -50,7 +54,7 @@ export const edit = ( { attributes, setAttributes } ) => {
 						<Flex>
 							<FlexBlock>
 								<SelectControl
-									label="Bracket Color"
+									label={__('Bracket Color', 'kdc-advanced-pullquote')}
 									options={colorOptions}
 									value={attributes.bracketColor}
 									onChange={(value) => setAttributes({
@@ -62,25 +66,25 @@ export const edit = ( { attributes, setAttributes } ) => {
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={__("Large / Small Bracket")}
+							label={__('Large / Small Bracket', 'kdc-advanced-pullquote')}
 							checked={attributes.bracketSize}
 							onChange={(value) => setAttributes({bracketSize: value})}
-							help={__("Toggle on for small.")}
+							help={__('Toggle on for small.', 'kdc-advanced-pullquote')}
 						/>
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={__("Show / Hide Quote Mark")}
+							label={__('Show / Hide Quote Mark', 'kdc-advanced-pullquote')}
 							checked={attributes.hideQuote}
 							onChange={(value) => setAttributes({hideQuote: value})}
-							help={__("Toggle on to hide.")}
+							help={__('Toggle on to hide.', 'kdc-advanced-pullquote')}
 						/>
 					</PanelRow>
 					<PanelRow>
 						<Flex>
 							<FlexBlock>
 								<SelectControl
-									label="Quote Color"
+									label={__('Quote Color', 'kdc-advanced-pullquote')}
 									options={colorOptions}
 									value={attributes.quoteColor}
 									onChange={(value) => setAttributes({
@@ -92,18 +96,18 @@ export const edit = ( { attributes, setAttributes } ) => {
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={__("Small / Large Quote")}
+							label={__('Small / Large Quote', 'kdc-advanced-pullquote')}
 							checked={attributes.quoteSize}
 							onChange={(value) => setAttributes({quoteSize: value})}
-							help={__("Toggle on for large.")}
+							help={__('Toggle on for large.', 'kdc-advanced-pullquote')}
 						/>
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={__("Animate Opacity")}
+							label={__('Animate Opacity', 'kdc-advanced-pullquote')}
 							checked={attributes.animateInView}
 							onChange={(value) => setAttributes({animateInView: value})}
-							help={__("Fade the pullquote in when visible.")}
+							help={__('Fade the pullquote in when visible.', 'kdc-advanced-pullquote')}
 						/>
 					</PanelRow>
 				</PanelBody>
