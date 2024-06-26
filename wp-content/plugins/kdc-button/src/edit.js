@@ -63,10 +63,12 @@ export const edit = ( properties ) => {
 	const { attributes } = properties;
 	const { beforeText = '', buttonText = '', afterText = '' } = attributes;
 	const blockProperties = useBlockProps();
-	blockProperties.className += " button-admin-custom";
+
 	const beforeTextOutput = beforeText !== '' ? `${beforeText} ` : '';
 	const buttonTextOutput = buttonText !== '' ? buttonText + ' ' : '';
-	const afterTextOutput = afterText !== '' ? ` ${afterText}` : '';
+	const afterTextOutput  = afterText !== '' ? ` ${afterText}` : '';
+
+	blockProperties.className += " button-admin-custom";
 
 	return (
 		<>

@@ -6,11 +6,12 @@ export const save = ( { attributes } ) => {
 	const blockProperties = useBlockProps.save();
 
 	const bracketStyleClass = bracketColor ? `is-style-bracket-color-${bracketColor}` : '';
-	const bracketSizeClass = bracketSize ? 'is-style-bracket-small' : '';
-	const animateClass = animateInView ? 'is-style-animate' : '';
-	const hideQuoteClass = hideQuote ? 'is-style-quotes-hidden' : '';
-	const quoteColorClass = quoteColor ? `is-style-quotes-color-${quoteColor}` : '';
-	const quoteSizeClass = quoteSize ? 'is-style-quotes-large' : '';
+	const bracketSizeClass  = bracketSize ? 'is-style-bracket-small' : '';
+	const animateClass      = animateInView ? 'is-style-animate' : '';
+	const hideQuoteClass    = hideQuote ? 'is-style-quotes-hidden' : '';
+	const quoteColorClass   = quoteColor ? `is-style-quotes-color-${quoteColor}` : '';
+	const quoteSizeClass    = quoteSize ? 'is-style-quotes-large' : '';
+
 	const classes = Classes.fromMany(
 		[blockProperties.className ?? '', bracketStyleClass, quoteColorClass, quoteSizeClass, bracketSizeClass, animateClass, hideQuoteClass]
 	);
