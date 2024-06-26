@@ -12,7 +12,7 @@ Example block scaffolded with Create Block tool.
 
 A block to output a pullquote from text on a page. There are options included to modify styles such as wrapping the quote in brackets, change colors, and modify the quote mark icon style.
 
-Outputs semantic markup based on MDN docs for a Quotation Figure. See `https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure#quotations` for more info.
+Outputs semantic markup based on MDN docs for a Quotation Figure. See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure#quotations for more info.
 
 == Installation ==
 
