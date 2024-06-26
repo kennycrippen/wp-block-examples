@@ -10,7 +10,7 @@
  */
 ?>
 <!-- wp:kdc/kdc-progress-bar {"align":"full","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"0","bottom":"var:preset|spacing|40"}}}} -->
-<section class="wp-block-kdc-kdc-progress-bar alignfull is-layout-constrained" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--50)"><!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
+<div class="wp-block-kdc-kdc-progress-bar alignfull is-layout-constrained" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--50)"><!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
 <div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"textColor":"base-2","className":"progress-bar\u002d\u002dheading is-style-default","fontSize":"medium"} -->
 <p class="progress-bar--heading is-style-default has-base-2-color has-text-color has-link-color has-medium-font-size">This is a place to write some content</p>
@@ -22,7 +22,7 @@
 <!-- wp:column {"verticalAlignment":"center","width":"50%","className":"social-share-col"} -->
 <div class="wp-block-column is-vertically-aligned-center social-share-col" style="flex-basis:50%"><!-- wp:kdc/kdc-social-share {"printText":"Print Page"} /--></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --><div class="progressBar"></div></section>
+<!-- /wp:columns --><div class="progressBar"></div></div>
 <!-- /wp:kdc/kdc-progress-bar -->
 
 <!-- wp:group {"tagName":"section","metadata":{"name":"Page Content"},"align":"wide","layout":{"type":"default"}} -->
