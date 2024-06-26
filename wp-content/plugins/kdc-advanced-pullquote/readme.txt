@@ -19,6 +19,9 @@ Outputs semantic markup based on MDN docs for a Quotation Figure. See https://de
 1. Upload the plugin files to the `/wp-content/plugins/kdc-advanced-pullquote` directory, or install the plugin through the WordPress plugins screen directly.
 1. Activate the plugin through the 'Plugins' screen in WordPress
 
+== Screenshots ==
+![Pullquote](./screenshot-1.png)
+
 == Changelog ==
 
 = 0.1.0 =
