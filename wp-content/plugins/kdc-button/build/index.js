@@ -85,10 +85,10 @@ const edit = properties => {
     afterText = ''
   } = attributes;
   const blockProperties = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)();
-  blockProperties.className += " button-admin-custom";
   const beforeTextOutput = beforeText !== '' ? `${beforeText} ` : '';
   const buttonTextOutput = buttonText !== '' ? buttonText + ' ' : '';
   const afterTextOutput = afterText !== '' ? ` ${afterText}` : '';
+  blockProperties.className += " button-admin-custom";
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, EditorControls(properties), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     ...blockProperties,
     href: "javascript:void(0)"
@@ -186,21 +186,21 @@ const save = properties => {
     afterText = ''
   } = attributes;
   const blockProperties = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save();
-  blockProperties.className += " button";
   const beforeTextOutput = beforeText !== '' ? `${beforeText} ` : '';
   const buttonTextOutput = buttonText !== '' ? buttonText : '';
   const buttonUrlOutput = url !== '' ? url : '#';
   const afterTextOutput = afterText !== '' ? ` ${afterText}` : '';
+  blockProperties.className += " button";
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     ...blockProperties,
     href: buttonUrlOutput,
     rel: "noopener noreferrer",
     target: target ? "_blank" : "_self"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  }, beforeText !== '' && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "before-text screen-reader-text"
   }, beforeTextOutput), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "text"
-  }, buttonTextOutput), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+  }, buttonTextOutput), afterText !== '' && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
     className: "after-text screen-reader-text"
   }, afterTextOutput));
 };

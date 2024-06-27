@@ -15,9 +15,13 @@ export const save = (properties) => {
 
 	return (
 		<a {...blockProperties} href={buttonUrlOutput} rel="noopener noreferrer" target={target ? "_blank" : "_self"}>
-			<span className="before-text screen-reader-text">{beforeTextOutput}</span>
+			{beforeText !== '' &&
+				<span className="before-text screen-reader-text">{beforeTextOutput}</span>
+			}
 			<span className="text">{buttonTextOutput}</span>
-			<span className="after-text screen-reader-text">{afterTextOutput}</span>
+			{afterText !== '' &&
+				<span className="after-text screen-reader-text">{afterTextOutput}</span>
+			}
 		</a>
 	);
 }

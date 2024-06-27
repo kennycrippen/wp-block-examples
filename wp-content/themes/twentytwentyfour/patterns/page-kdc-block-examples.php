@@ -43,12 +43,12 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:kdc/kdc-buttons {"className":"undefined","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-kdc-kdc-buttons undefined" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:kdc/kdc-button {"buttonText":"Read More","afterText":"about a very interesting specific subject.","url":"https://google.com","target":true,"className":"undefined"} -->
-<a class="wp-block-kdc-kdc-button undefined button" href="https://google.com" rel="noopener noreferrer" target="_blank"><span class="before-text screen-reader-text"></span><span class="text">Read More</span><span class="after-text screen-reader-text"> about a very interesting specific subject.</span></a>
+<div class="wp-block-kdc-kdc-buttons undefined" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:kdc/kdc-button {"buttonText":"Read More","url":"https://google.com","target":true,"className":"undefined"} -->
+<a class="wp-block-kdc-kdc-button undefined button" href="https://google.com" rel="noopener noreferrer" target="_blank"><span class="text">Read More</span></a>
 <!-- /wp:kdc/kdc-button -->
 
 <!-- wp:kdc/kdc-button {"buttonText":"Donate","afterText":"to a specific research fund now.","url":"#","className":"undefined"} -->
-<a class="wp-block-kdc-kdc-button undefined button" href="#" rel="noopener noreferrer" target="_self"><span class="before-text screen-reader-text"></span><span class="text">Donate</span><span class="after-text screen-reader-text"> to a specific research fund now.</span></a>
+<a class="wp-block-kdc-kdc-button undefined button" href="#" rel="noopener noreferrer" target="_self"><span class="text">Donate</span><span class="after-text screen-reader-text"> to a specific research fund now.</span></a>
 <!-- /wp:kdc/kdc-button --></div>
 <!-- /wp:kdc/kdc-buttons -->
 
@@ -112,27 +112,27 @@
 
 <!-- wp:kdc/kdc-buttons {"className":"undefined is-three-up-layout","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}}} -->
 <div class="wp-block-kdc-kdc-buttons undefined is-three-up-layout" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:kdc/kdc-button {"buttonText":"Buttons","url":"#","className":"undefined"} -->
-<a class="wp-block-kdc-kdc-button undefined button" href="#" rel="noopener noreferrer" target="_self"><span class="before-text screen-reader-text"></span><span class="text">Buttons</span><span class="after-text screen-reader-text"></span></a>
+<a class="wp-block-kdc-kdc-button undefined button" href="#" rel="noopener noreferrer" target="_self"><span class="text">Buttons</span></a>
 <!-- /wp:kdc/kdc-button -->
 
 <!-- wp:kdc/kdc-button {"buttonText":"Laid","className":"undefined"} -->
-<a class="wp-block-kdc-kdc-button undefined button" href="#" rel="noopener noreferrer" target="_self"><span class="before-text screen-reader-text"></span><span class="text">Laid</span><span class="after-text screen-reader-text"></span></a>
+<a class="wp-block-kdc-kdc-button undefined button" href="#" rel="noopener noreferrer" target="_self"><span class="text">Laid</span></a>
 <!-- /wp:kdc/kdc-button -->
 
 <!-- wp:kdc/kdc-button {"buttonText":"Out","className":"undefined"} -->
-<a class="wp-block-kdc-kdc-button undefined button" href="#" rel="noopener noreferrer" target="_self"><span class="before-text screen-reader-text"></span><span class="text">Out</span><span class="after-text screen-reader-text"></span></a>
+<a class="wp-block-kdc-kdc-button undefined button" href="#" rel="noopener noreferrer" target="_self"><span class="text">Out</span></a>
 <!-- /wp:kdc/kdc-button -->
 
 <!-- wp:kdc/kdc-button {"buttonText":"In a","className":"undefined"} -->
-<a class="wp-block-kdc-kdc-button undefined button" href="#" rel="noopener noreferrer" target="_self"><span class="before-text screen-reader-text"></span><span class="text">In a</span><span class="after-text screen-reader-text"></span></a>
+<a class="wp-block-kdc-kdc-button undefined button" href="#" rel="noopener noreferrer" target="_self"><span class="text">In a</span></a>
 <!-- /wp:kdc/kdc-button -->
 
 <!-- wp:kdc/kdc-button {"buttonText":"Three-up"} -->
-<a class="wp-block-kdc-kdc-button button" href="#" rel="noopener noreferrer" target="_self"><span class="before-text screen-reader-text"></span><span class="text">Three-up</span><span class="after-text screen-reader-text"></span></a>
+<a class="wp-block-kdc-kdc-button button" href="#" rel="noopener noreferrer" target="_self"><span class="text">Three-up</span></a>
 <!-- /wp:kdc/kdc-button -->
 
 <!-- wp:kdc/kdc-button {"buttonText":"Grid"} -->
-<a class="wp-block-kdc-kdc-button button" href="#" rel="noopener noreferrer" target="_self"><span class="before-text screen-reader-text"></span><span class="text">Grid</span><span class="after-text screen-reader-text"></span></a>
+<a class="wp-block-kdc-kdc-button button" href="#" rel="noopener noreferrer" target="_self"><span class="text">Grid</span></a>
 <!-- /wp:kdc/kdc-button --></div>
 <!-- /wp:kdc/kdc-buttons -->
 
