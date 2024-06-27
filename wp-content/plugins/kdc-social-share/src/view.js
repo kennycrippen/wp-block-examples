@@ -10,9 +10,9 @@ if(block) {
 		socialShareDropdown.classList.toggle('open');
 
 		if(triggerSocialShareDropdown.classList.contains('open')) {
-			triggerSocialShareDropdown.setAttribute("aria-expanded", "true");
+			triggerSocialShareDropdown.setAttribute('aria-expanded', 'true');
 		} else {
-			triggerSocialShareDropdown.setAttribute("aria-expanded", "false");
+			triggerSocialShareDropdown.setAttribute('aria-expanded', 'false');
 		}
 	});
 
@@ -28,8 +28,8 @@ if(block) {
 	document.onkeydown = (evt) => {
 		evt = evt || window.event;
 		var isEscape = false;
-		if ("key" in evt) {
-			isEscape = (evt.key === "Escape" || evt.key === "Esc");
+		if ('key' in evt) {
+			isEscape = (evt.key === 'Escape' || evt.key === 'Esc');
 		} else {
 			isEscape = (evt.keyCode === 27);
 		}
@@ -57,10 +57,10 @@ if(block) {
 	});
 
 	// Mobile social share with Web Share API.
-	const btn = block.querySelector(".js--trigger-mobile-share");
+	const btn = block.querySelector('.js--trigger-mobile-share');
 
 	const shareData = {
-		title: "KDC Website",
+		title: 'KDC Website',
 		text: btn.dataset.shareText,
 		url: btn.dataset.shareUrl,
 	};
